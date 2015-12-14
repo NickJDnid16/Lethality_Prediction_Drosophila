@@ -48,7 +48,7 @@ def parseTagValue(term):
   
   
   
-oboFile = open('/home/nid16/workspace/Project_With_New_Data/New_GO.obo','r')
+oboFile = open('./New_GO.obo','r')
 
 #declare a blank dictionary
 #keys are the goids
@@ -91,7 +91,7 @@ import json
 
 #print(terms, indent=4)
 # ^ugly
-outputfile = codecs.open('/home/nid16/workspace/Project/GO_Children&Parents.txt', encoding='utf-8', mode='w')
+outputfile = codecs.open('./GO_Children&Parents.txt', encoding='utf-8', mode='w')
 
 outputfile.write(json.dumps(terms, indent=4))
 # ^nice

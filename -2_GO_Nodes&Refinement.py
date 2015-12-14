@@ -8,9 +8,9 @@ Created on 25 Oct 2015
 import re
 import codecs
 
-GraphInput = open('/home/nid16/workspace/Project/GO_Children&Parents.txt', mode='r')
+GraphInput = open('./GO_Children&Parents.txt', mode='r')
 
-outputfile = open('/home/nid16/workspace/Project/GO_Nodes.txt', mode='w')
+outputfile = open('./GO_Nodes.txt', mode='w')
 
 GO_Seen = set()
 
@@ -29,9 +29,9 @@ for line in GraphInput:
 outputfile.close()
 
 
-NodesInput = open('/home/nid16/workspace/Project/GO_Nodes.txt', mode='r')
+NodesInput = open('./GO_Nodes.txt', mode='r')
 
-NodesOutput = open('/home/nid16/workspace/Project/Refined_GO_Nodes.txt', mode='w')
+NodesOutput = open('./Refined_GO_Nodes.txt', mode='w')
 
 Nodes_Seen = set()
 

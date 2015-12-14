@@ -8,7 +8,7 @@ import csv
 import codecs
 from theano.sandbox.cuda.basic_ops import row
 
-inputfile = open('./Gene&GO_F.txt', mode='r')
+inputfile = open('./Gene&GO_F_With_Lethality.txt', mode='r')
 outputfile = open('./Gene&GO_F_No_IMP.txt', mode='w')
 
 inputfile = csv.reader(inputfile, delimiter=',')
