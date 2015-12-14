@@ -9,7 +9,7 @@ import codecs
 from theano.sandbox.cuda.basic_ops import row
 
 inputfile = open('./Gene&GO_F.txt', mode='r')
-outputfile = open('/home/nid16/workspace/Project_With_New_Data/Gene&GO_F_No_IMP.txt', mode='w')
+outputfile = open('./Gene&GO_F_No_ISS.txt', mode='w')
 
 inputfile = csv.reader(inputfile, delimiter=',')
 
@@ -26,7 +26,7 @@ for rows in inputfile:
             current = rows[index]
             if index-1 != -1:
                 if "viable" in rows[-1] or "lethal" in rows[-1]:# and "GO" in rows:
-                    while "IMP" in rows[index] and "GO" in previous:
+                    while "ISS" in rows[index] and "GO" in previous:
                             rows.pop(index-1)
                             if "GO" != rows:
                                 break

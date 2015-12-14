@@ -74,3 +74,89 @@ for row in inputfile:
     outputfile.write(',')
     outputfile.write(str(row[1]))
     outputfile.write('\n')
+
+
+#############################################################
+
+
+inputfile = open('./Gene&Lethality_Only.txt', mode='r')
+outputfile = open('./Gene_With_Lethal&Viable_Only.txt', mode='w')
+
+inputfile = csv.reader(inputfile, delimiter=',')
+
+for row in inputfile:
+
+
+    #del row[1]
+    Temp = (str(row[1]))
+    if "lethal" in Temp:
+        Temp = "lethal"
+    if "viable" in Temp:
+        Temp = "viable"
+
+    outputfile.write(str(row[0]))
+    outputfile.write(",")
+    outputfile.write(Temp)
+    outputfile.write('\n')
+
+#############################################################
+
+
+data = {}
+
+
+inputfile = open('./Gene_With_Lethal&Viable_Only.txt', mode='r')
+outputfile = open('./Genes_With_All_Lethality.txt', mode='w')
+
+for line in inputfile:
+    split_string = line.split(",")
+    genome = split_string [0]
+    lethalNotation = split_string [1]
+    data [genome] = data.get(genome,"")+lethalNotation.rstrip('\r\n')+","
+
+
+for x in data:
+        #print (x+","+data[x]+"\n")
+    outputfile.write(x+","+data[x]+"\n")
+
+outputfile.close()
+
+
+
+########################################
+
+
+
+
+
+outputfile = open('./Single_Lethality_Genes.txt', mode='w')
+inputfile = open('./Genes_With_All_Lethality.txt', mode='r')
+
+for line in inputfile:
+    v = "viable" in line
+    l = "lethal" in line
+
+    if (l and v):
+        print ("Ignoring Line")
+    else:
+        line = line.rstrip()
+        bits = line.split(',')
+        if(v):
+            bit = bits[0]+",viable\n"
+            print (bit)
+            outputfile.write(bit)
+        if(l):
+            bit = bits[0]+",lethal\n"
+            print (bit)
+            outputfile.write(bit)
+        if ((not l) and (not v)):
+            print("Not Viable OR Lethal")
+
+
+outputfile.close()
+
+
+############################################################################################
+
+
+
