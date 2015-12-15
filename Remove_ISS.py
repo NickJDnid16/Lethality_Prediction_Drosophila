@@ -6,9 +6,10 @@ Created on 25 Oct 2015
 
 import csv
 import codecs
-from theano.sandbox.cuda.basic_ops import row
 
-inputfile = open('./Gene&GO_F_With_Lethality.txt', mode='r')
+
+#inputfile = open('./Gene&GO_F_With_Lethality.txt', mode='r')
+inputfile = open('./Gene&GO_F_No_IMP.txt', mode='r')#To remove IMP and ISS
 outputfile = open('./Gene&GO_F_No_ISS.txt', mode='w')
 
 inputfile = csv.reader(inputfile, delimiter=',')

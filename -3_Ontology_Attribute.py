@@ -6,7 +6,7 @@ Created on 26 Oct 2015
 
 import codecs 
 
-output = open('./Ontology_Attributes', mode='w')
+output = open('./Ontology_Attributes.txt', mode='w')
 
 line = 0 
 

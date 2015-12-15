@@ -1,39 +1,18 @@
 from datetime import datetime
-#from graphviz.dot import Dot
-from configglue.inischema.parsers import lines
-startTime = datetime.now()
 
-#Unicode Characters from text file
-import codecs
-
-import json
-import re 
-from pprint import pprint
-from datetime import datetime
-#from graphviz.dot import Dot
-from configglue.inischema.parsers import lines
 startTime = datetime.now()
 
 #Unicode Characters from text file
 import codecs
 import json
-import re 
-from pprint import pprint
-# Import graphviz
-import sys
 
-#import gv
 
-# Import pygraph
 
-from pygraph.classes.graph import graph
 from pygraph.classes.digraph import digraph
-from pygraph.algorithms.searching import breadth_first_search
-#from pygraph.readwrite.dot import write
 
 
 # Graph creation
-#graph [ overlap=false ].
+
 gr = digraph()
 count = 0
 
@@ -131,7 +110,10 @@ def Duplicates(Up):
 
 debug = 0
 #outputfile = open('/home/mint/git/prediction-of-Lethality-in-Fly-Mutants-using-Machine-Learning/Workspace/Lethality Extraction/Vector.txt')
-data = open('./Gene&GO_F_With_Lethality.txt')
+#data = open('./Gene&GO_F_With_Lethality.txt')
+data = open('./Gene&GO_F_No_ISS.txt')#NO ISS
+#data = open('./Gene&GO_F_No_IMP.txt')#NO IMP
+
 outputfile = open('./BinVec.txt', mode = 'w')
 OutMissing = open('./Missing.txt', mode = 'w')
 OutParents = open('./Parents.txt', mode = 'w')
@@ -149,7 +131,7 @@ for line in data:
                 
                 temp = csv[t]
                 temp = temp.replace(":","")
-               # print ("Ancestors")
+                #print ("Ancestors")
                 #print(gr.incidents(temp))
                 Ancestors = []
                 #Ancestors.append(temp)
@@ -182,7 +164,7 @@ for line in data:
                         
                         for node in Up:
                                 if node not in Nodes:
-                                    #if node != "GO0043089":
+
                                         try:
                                             Up.extend(gr.incidents(node))
                                             l = l+1

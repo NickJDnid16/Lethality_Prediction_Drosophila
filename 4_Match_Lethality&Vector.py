@@ -22,7 +22,9 @@ for BinLine in codecs.open('./BinVec.txt',encoding='utf-8', mode='r'):
     
     lines = lines +1
     
-    line = linecache.getline('./Gene&GO_F_With_Lethality.txt', lines)
+    #line = linecache.getline('./Gene&GO_F_With_Lethality.txt', lines)
+    line = linecache.getline('./Gene&GO_F_No_ISS.txt', lines)
+    #line = linecache.getline('./Gene&GO_F_No_IMP.txt', lines)
     count = 0
     
     if "GO" in line:
@@ -38,8 +40,6 @@ for BinLine in codecs.open('./BinVec.txt',encoding='utf-8', mode='r'):
                 
             
                 Out = ','.join(csv)
-                #Out = Out.replace('\n', '')
-                #Out = Out.replace('\'','')
                 OutPut.write(Out.strip('\'"'))
                 OutPut.write(",lethal")
                 OutPut.write("\n")
@@ -48,7 +48,6 @@ for BinLine in codecs.open('./BinVec.txt',encoding='utf-8', mode='r'):
           
                 print "viable"
                 Out = ','.join(csv)
-                #Out = Out.replace('\n', '')
                 Out = Out.replace('\'','')
                 OutPut.write(Out.strip('"\''))
                 OutPut.write(",viable") 

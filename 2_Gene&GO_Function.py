@@ -7,7 +7,7 @@ data = {}
 
 outputfile = open('./Gene&GO_F.txt', mode='w')
 
-for line in open('./New_gene_association.fb'):
+for line in open('./gene_association.fb'):
 
     if(line[:2] == "FB"):
         split_string = line.split("\t")
