@@ -30,9 +30,8 @@ def keep_columns(lst, func, headers=True):
 
 
 
-
 if __name__ == "__main__":
-    fn = "/home/mintvm/Dropbox/New_Lethality.csv"
+    fn = "/home/mintvm/Dropbox/CURRENT/Worm/Worm.csv"
 
     with open(fn, "r") as csvf:
         rdr = csv.reader(csvf, delimiter=",")
@@ -42,4 +41,5 @@ if __name__ == "__main__":
 
         for col in get_columns(data, keep):
             print(",".join(col))
+            
 

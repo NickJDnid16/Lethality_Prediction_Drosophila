@@ -158,7 +158,8 @@ for line in data:
                             try:
                                 Up.extend(gr.incidents(node))
                                 l = l + 1
-                                if l == 1000000:
+
+                           if l == 1000000:
                                     Up = Duplicates(Up)
                                     # print("Parents Added")
                             except (KeyError, ValueError):
@@ -203,155 +204,7 @@ for line in data:
                 print("Already Missing")
             except (KeyError, ValueError):
                 Missing.append(Node)
-# ##################################################################################
-#     GO_Terms = []
-#     Leaf_1 = []
-#     Leaf_2 = []
-#     Leaf_3 = []
-#     Leaf_4 = []
-#     Leaf_5 = []
-#     Leaf_6 = []
-#     Leaf_7 = []
-#     Leaf_8 = []
-#     Leaf_9 = []
-#     Leaf_10 = []
-#     Leaf_11 = []
-#     Leaf_12 = []
-#     Leaf_13 = []
-#     Leaf_14 = []
-#     Leaf_15 = []
-#     Leaf_16 = []
-#     print Gene
-#     print ModifiedAncestors
-#     # sys.exit("dff")
-#     #for GO in ModifiedAncestors:
-#
-#     if "GO0022008" in ModifiedAncestors:
-#         GO_Terms.append(Gene + " GO0022008")
-#         Leaf_1.append(Gene + ",")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0022008" + " ")
-#         Genes.write(csv[-1])
-#
-#
-#     if "GO0009792" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0009792")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0009792" + " ")
-#         Genes.write(csv[-1])
-#     #####
-#     if "GO0010631" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0010631")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0010631" + " ")
-#         Genes.write(csv[-1])
-#     #####
-#
-#     if "GO0048598" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0048598")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0048598" + " ")
-#         Genes.write(csv[-1])
-#     #####
-#     if "GO0048731" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0048731")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0048731" + " ")
-#         Genes.write(csv[-1])
-#         #print "GENES"
-#         #print GO_Terms
-#         #sys.exit("STOPPED")
-#         # time.sleep(5)
-#     #####
-#     if "GO0048646" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0048646")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0048646" + " ")
-#         Genes.write(csv[-1])
-#     #####
-#     if "GO0048477" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0048477")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0048477" + " ")
-#         Genes.write(csv[-1])
-#     #####
-#     if "GO0009886" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0009886")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0009886" + " ")
-#         Genes.write(csv[-1])
-#     #####
-#     if "GO1903047" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO1903047")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:1903047" + " ")
-#         Genes.write(csv[-1])
-#     #####
-#     if "GO0048513" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0048513")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0048513" + " ")
-#         Genes.write(csv[-1])
-#     #####
-#     if "GO0098796" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0098796")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0098796" + " ")
-#         Genes.write(csv[-1])
-#     #####
-#     if "GO0006357" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + "GO0006357")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0006357" + " ")
-#         Genes.write(csv[-1])
-#     #####
-#     if "GO0006357" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0006357")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO:0006357" + " ")
-#         Genes.write(csv[-1])
-#     #####
-#     if "GO0032991" in ModifiedAncestors and "GO0044446" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0032991 With GO:0044446")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO0032991 With GO:0044446 ")
-#         Genes.write(csv[-1])
-#     #####
-#     if "GO0032991" in ModifiedAncestors and not "GO0044446" in ModifiedAncestors and Gene not in GO_Terms:
-#         GO_Terms.append(Gene + " GO0032991 Without GO:0044446")
-#         print counter
-#         Genes.write(Gene + " ")
-#         Genes.write("GO0032991 Without GO:0044446 ")
-#         Genes.write(csv[-1])
-#     if any(ModifiedAncestors) not in GO_Terms or Gene not in GO_Terms:
-#         print "Left Overs"
-#         Leaf_16.append(Gene + ",")
-#         Genes.write(Gene + " ")
-#         Genes.write("Without Any Identified GO Terms ")
-#         Genes.write(csv[-1])
-#
-#
-#     print GO_Terms
-#
-#     count = count + 1
-#
-#     ##################################################################################
-    outputfile.write(Gene)
-    outputfile.write(',')
+
 
     for key in BinVec:
         outputfile.write(str(key))

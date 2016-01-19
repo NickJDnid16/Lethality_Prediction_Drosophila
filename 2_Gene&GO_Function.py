@@ -7,9 +7,9 @@ data = {}
 
 outputfile = open('./Gene&GO_F.txt', mode='w')
 
-for line in open('./gene_association.fb'):
+for line in open('./gene_association.WS250.wb.c_elegans'):
 
-    if(line[:2] == "FB"):
+    if(line[:2] == "WB"):#FlyBase = FB
         split_string = line.split("\t")
         genome = split_string [2]
         GO = split_string [4]
