@@ -204,7 +204,9 @@ for line in data:
                 print("Already Missing")
             except (KeyError, ValueError):
                 Missing.append(Node)
-
+    
+    outputfile.write(Gene)
+    outputfile.write(',')
 
     for key in BinVec:
         outputfile.write(str(key))
