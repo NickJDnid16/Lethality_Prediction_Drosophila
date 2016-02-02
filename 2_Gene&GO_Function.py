@@ -27,16 +27,41 @@ for line in open('./Single_Lethality_Genes.txt', mode='r'):
     split_line = line.split(",")
     gene = split_line[0]
     data[gene] = data.get(gene,"")+str(split_line[1])
+
+
 ################################################################
     #for element in FUNC:
-    split_string = element.split("\t")
-    if split_line[1] is "lethal" and gene is split_string[0]:
-        FUNC.append("\t" + "1")
+    #split_string = element.split("\t")
+newFUNC = []
+tempFUNC = []
+geneSeen = []
+for line in open('./Single_Lethality_Genes.txt', mode='r'):
+    line = line.rstrip()
+    split_line = line.split(",")
+    gene = split_line[0]
+    lethality = split_line[1]
+    if (lethality == "lethal"):
+        for line in FUNC:
+            if gene in line and line not in geneSeen:
+                geneSeen.append(line)
+                line.rstrip
+                tempFUNC = (line + "\t" + "1")
+
+
+
+
+
+
+        newFUNC.append(tempFUNC)
         print "Something"
-    elif split_line[1] is "viable" and gene is split_string[0]:
-        FUNC.append("\t" + "0")
-        print "Something"
-    FUNCoutputfile.write(str(FUNC))
+        print tempFUNC
+#elif split_line[1] is "viable" and gene is split_string[0]:
+#    FUNC.append("\t" + "0")
+#    print "Something"
+FUNCoutputfile.write(str(newFUNC))
+
+###############################################################
+
 for x in data:
     print (x,data[x])
     outputfile.write(x+","+data[x]+"\n")
