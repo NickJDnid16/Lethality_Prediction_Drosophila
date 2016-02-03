@@ -2,9 +2,9 @@ __author__ = 'nid16'
 
 import codecs
 import csv
-
+import sys
 data = {}
-
+import pprint
 outputfile = open('./Gene&GO_F.txt', mode='w')
 GOoutputfile = open('./Gene_With_Only_GO.txt', mode='w')
 FUNCoutputfile = open('./Gene_With_GO_FUNC .txt', mode='w')
@@ -30,10 +30,9 @@ for line in open('./Single_Lethality_Genes.txt', mode='r'):
 
 
 ################################################################
-    #for element in FUNC:
-    #split_string = element.split("\t")
+
 newFUNC = []
-tempFUNC = []
+
 geneSeen = []
 for line in open('./Single_Lethality_Genes.txt', mode='r'):
     line = line.rstrip()
@@ -42,25 +41,39 @@ for line in open('./Single_Lethality_Genes.txt', mode='r'):
     lethality = split_line[1]
     if (lethality == "lethal"):
         for line in FUNC:
+            tempFUNC = []
             if gene in line and line not in geneSeen:
                 geneSeen.append(line)
-                line.rstrip
-                tempFUNC = (line + "\t" + "1")
+                line = line.strip()
+                tempFUNC.append(str(line) + "\t1")
+                print tempFUNC
+                newFUNC.append(tempFUNC)
+    if (lethality == "viable"):
+        for line in FUNC:
+            tempFUNC = []
+            if gene in line and line not in geneSeen:
+                geneSeen.append(line)
+                line = line.replace('\n','')
+                tempFUNC.append(str(line) + "\t0")
 
+                print tempFUNC
+                newFUNC.append(tempFUNC)
 
-
-
-
-
-        newFUNC.append(tempFUNC)
         print "Something"
         print tempFUNC
-#elif split_line[1] is "viable" and gene is split_string[0]:
-#    FUNC.append("\t" + "0")
-#    print "Something"
-FUNCoutputfile.write(str(newFUNC))
+#FUNCoutputfile.write("\n".join(newFUNC))
+
+
+for element in newFUNC:
+    #FUNCoutputfile.writelines(str(element)+"\n")
+    FUNCoutputfile.write(" ".join(element) + "\n")
+sys.exit("STOPEED")
 
 ###############################################################
+
+
+
+########################################################
 
 for x in data:
     print (x,data[x])
