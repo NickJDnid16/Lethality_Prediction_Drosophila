@@ -451,8 +451,8 @@ BG02053,viable
 CG14322,viable
 l(2)k03610,lethal
 SR3-8,lethal
-trc,lethal
 l(3)B3-3-21,lethal
+rnh1,lethal
 l(1)ts1075,lethal
 CG7220,lethal
 l(2)k07109a,lethal
@@ -682,7 +682,6 @@ CG12004,viable
 RpII33,lethal
 l(3)ET4,lethal
 l(3)CL-R,lethal
-tu(3)be,viable
 l(1)G0277,lethal
 osh,viable
 l(1)G0275,lethal
@@ -962,7 +961,6 @@ l(2)k11326,lethal
 l(2)k11325,lethal
 l(2)SH0889,lethal
 l(2)SH0559,lethal
-slip,lethal
 CG32532,viable
 Dana\Snp,viable
 Cyp301a1,viable
@@ -1044,7 +1042,7 @@ l(3)S104018b,lethal
 CG11396,viable
 l(2)SH1275,lethal
 CG11391,viable
-Rbp4,viable
+comm,lethal
 l(3)S006313,lethal
 CG11399,viable
 CG12119,viable
@@ -1069,7 +1067,6 @@ l(2)k12004,lethal
 Iswi,lethal
 CR32773,viable
 l(3)S077801,lethal
-mud,lethal
 l(1)ts4931B,lethal
 l(2)43Eg,lethal
 CG13082,viable
@@ -1186,7 +1183,7 @@ polk,lethal
 CG11566,viable
 DIP2,viable
 toto,lethal
-CG11563,viable
+ddt,lethal
 l(3)L3130,lethal
 l(3)S122404,lethal
 ddl,viable
@@ -1294,7 +1291,7 @@ fs(1)M21,lethal
 l(3)69ABa,lethal
 l(3)06265,lethal
 fs(1)M24,lethal
-fs(1)M26,lethal
+Hen1,viable
 fs(1)M27,lethal
 Vago,viable
 Arf79F,viable
@@ -1784,6 +1781,7 @@ fs(2)A13,lethal
 fs(2)A11,lethal
 l(3)AP1,lethal
 LKRSDH,viable
+se,viable
 CG5342,viable
 l(3)j6C3,lethal
 E(faf)bE160,viable
@@ -1867,6 +1865,7 @@ Vmat,lethal
 ninaG,viable
 l(3)S063602,lethal
 rho-7,viable
+l(3)S084210b,lethal
 l(3)S098516a,lethal
 be,lethal
 bf,viable
@@ -2805,7 +2804,7 @@ CG4593,lethal
 Pfrx,viable
 CG4594,viable
 WDR79,viable
-fai,lethal
+CG4362,viable
 l(1)2Cg,lethal
 l(1)2Cd,lethal
 l(1)2Ce,lethal
@@ -2892,6 +2891,7 @@ l(2)SH0682,lethal
 CG10063,viable
 l(2)SH0680,lethal
 l(2)SH0686,lethal
+mir-9c,viable
 l(2)23CDa,lethal
 l(1)X10,lethal
 l(3)S102908,lethal
@@ -2975,7 +2975,7 @@ Dfun\Cv,lethal
 CG6178,viable
 CG2889,viable
 CG30392,viable
-CG30393,viable
+CG4452,viable
 l(2)SH1656,lethal
 l(2)SH1305,lethal
 CG4455,viable
@@ -3622,7 +3622,6 @@ l(1)1EFb,lethal
 l(1)1EFc,lethal
 l(3)S063218,lethal
 l(1)1EFa,lethal
-tak,lethal
 eve::h,viable
 quag,lethal
 CG9917,viable
@@ -3669,6 +3668,7 @@ l(3)00835,lethal
 l(3)00836,lethal
 l(3)S091709,lethal
 l(2)SH0531,lethal
+slip,lethal
 l(2)SH1971,lethal
 CG11768,viable
 Fuca,viable
@@ -4704,7 +4704,7 @@ CG32795,viable
 CG15296,viable
 fs(1)11-1505,lethal
 l(2)k07020,lethal
-e,viable
+Ae,lethal
 l(3)S074510b,lethal
 svs,viable
 RanBP3,viable
@@ -5259,6 +5259,7 @@ CG4115,viable
 l(2)k07312b,lethal
 Acp53C14b,viable
 wake,lethal
+trc,lethal
 obst-A,lethal
 CG31097,lethal
 Tasp1,lethal
@@ -5810,6 +5811,7 @@ Ext2,lethal
 Efr,lethal
 ALiX,viable
 l(1)G0400,lethal
+l(3)S089004,lethal
 l(1)G0406,lethal
 Hsp70Ba,viable
 l(2)Mai179,lethal
@@ -5896,7 +5898,6 @@ CG15236,viable
 Dbus\Hr,lethal
 Mesh1,viable
 Utx,lethal
-rnh1,lethal
 l(1)5Da,lethal
 CG13699,viable
 slt,viable
@@ -6454,6 +6455,7 @@ l(3)s3123,lethal
 l(3)05143,lethal
 l(3)S147114,lethal
 Wr,viable
+mud,lethal
 l(3)S079311b,lethal
 GatA,lethal
 CG32075,lethal
@@ -6487,6 +6489,7 @@ eIF-4a,lethal
 l(2)k07015,lethal
 CG6145,viable
 l(4)102CDv,lethal
+trsn,viable
 Mod(var)177,viable
 CG9674,viable
 Nedd8,lethal
@@ -6643,6 +6646,7 @@ l(3)09656,lethal
 l(2)23AB2,lethal
 CG3529,viable
 E(br)187,lethal
+tu(3)be,viable
 CG4970,viable
 CG3520,viable
 E(rst)K166,viable
@@ -6676,7 +6680,6 @@ l(3)73Bc,lethal
 l(2)k06020,lethal
 l(2)k06021,lethal
 l(1)G0209,lethal
-l(3)ry59,lethal
 l(1)G0203,lethal
 l(1)G0200,lethal
 l(2)Co,lethal
@@ -6728,7 +6731,7 @@ spict,viable
 l(2)SH0006,lethal
 l(1)HF326,lethal
 Walker,lethal
-Ae,lethal
+e,viable
 CG13895,viable
 l(3)S043901b,lethal
 CG13893,viable
@@ -6988,6 +6991,7 @@ MCO3,viable
 l(1)K49c28-A3,lethal
 l(2)05327b,lethal
 CG8708,viable
+l(3)ry59,lethal
 l(3)97De,lethal
 l(1)6PP7,lethal
 Dafs\Pctd,lethal
@@ -7186,7 +7190,6 @@ E(Pc)a,lethal
 daw,lethal
 l(3)S064318,lethal
 l(?)rK270,lethal
-l(3)S089004,lethal
 l(1)15DFa,lethal
 l(3)S003220,lethal
 l(3)SG30,lethal
@@ -7479,7 +7482,7 @@ CG5359,viable
 fs(1)M120,lethal
 fs(1)M121,lethal
 fs(1)M122,lethal
-ddt,lethal
+CG11563,viable
 Unc-115a,viable
 Prosalpha6,lethal
 Su(tor)3-8,lethal
@@ -7749,8 +7752,8 @@ l(2)k09913,lethal
 XG47,viable
 Tsp74F,lethal
 nut,lethal
+tak,lethal
 l(3)S083705,lethal
-l(3)S084210b,lethal
 BG01686,viable
 l(1)17,lethal
 l(1)16,lethal
@@ -7998,7 +8001,6 @@ l(2)00231,lethal
 scpr-B,viable
 CDC45L,lethal
 l(3)S095204b,lethal
-CG4452,viable
 l(2)k09932,lethal
 l(2)SH0265,lethal
 l(2)SH0266,lethal
@@ -8029,7 +8031,7 @@ sofe,viable
 Mgat1,viable
 Mgat2,viable
 SCOT,viable
-Hen1,viable
+fs(1)M26,lethal
 tral,lethal
 Psf1,lethal
 l(2)MV,lethal
@@ -8672,7 +8674,6 @@ CG11752,viable
 Sdr,viable
 Dwil\Ri,lethal
 Mkrn1,viable
-trsn,viable
 l(3)65CEa,lethal
 l(3)65CEb,lethal
 l(3)65CEc,lethal
@@ -8796,6 +8797,7 @@ Prosalpha6T,viable
 l(3)S143814,lethal
 l(3)rI165,lethal
 CG45050,lethal
+CG30393,viable
 CG45057,viable
 cno,lethal
 cni,lethal
@@ -9299,7 +9301,7 @@ l(3)82Fj,lethal
 l(2)SH0998,lethal
 Rbp1,viable
 CG15715,viable
-comm,lethal
+Rbp4,viable
 l(1)294-22,lethal
 Rbp6,viable
 Rbp9,viable
@@ -9604,7 +9606,7 @@ CG31650,viable
 CG31301,viable
 Dwil\S,lethal
 l(3)S042228,lethal
-CG4362,viable
+fai,lethal
 fan,viable
 CG4364,lethal
 Dwil\N,lethal
@@ -9845,7 +9847,6 @@ PMCA,lethal
 atilla,viable
 l(2)S1,lethal
 Synj,lethal
-mir-9c,viable
 l(2)S7,lethal
 CG6873,lethal
 l(?)rO127,lethal
@@ -10855,7 +10856,6 @@ Rab3,viable
 Rab4,viable
 Rab9,viable
 l(3)67BDg,lethal
-se,viable
 Dvir\Ba,lethal
 Ccs,lethal
 Scoop,viable

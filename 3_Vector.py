@@ -163,7 +163,7 @@ for line in data:
                                     Up = Duplicates(Up)
                                     # print("Parents Added")
                             except (KeyError, ValueError):
-                                print("Error")
+                            print("Error")
 
                                 # print("Node Size")
                                 # print(len(Nodes))
