@@ -103,11 +103,12 @@ for rows in inputfile:
             if "GO" in str(rows):
                 writer.writerow(rows)
                 print rows
+########################################################
 
 outputfile.close()
 inputfile = open('./Gene&GO_F_With_Lethality.txt', mode='r')
-lethaloutfile = open('./Lethal_With_GO_Gene_Only.txt', mode='w')
-alloutfile = open('./Gene_With_GO_Gene_Only.txt', mode='w')
+lethaloutfile = open('./Fly_Gene_Lethal.txt', mode='w')
+alloutfile = open('./Fly_Gene_Viable_Lethal.txt', mode='w')
 inputfile = csv.reader(inputfile, delimiter=',')
 for line in inputfile:
     if "lethal" in line[-1]:
