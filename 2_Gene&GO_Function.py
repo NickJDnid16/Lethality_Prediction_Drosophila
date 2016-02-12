@@ -31,42 +31,42 @@ for line in open('./Single_Lethality_Genes.txt', mode='r'):
 
 ################################################################
 
-newFUNC = []
-
-geneSeen = []
-for line in open('./Single_Lethality_Genes.txt', mode='r'):
-    line = line.rstrip()
-    split_line = line.split(",")
-    gene = split_line[0]
-    lethality = split_line[1]
-    if (lethality == "lethal"):
-        for line in FUNC:
-            tempFUNC = []
-            if gene in line and line not in geneSeen:
-                geneSeen.append(line)
-                line = line.strip()
-                tempFUNC.append(str(line) + "\t1")
-                print tempFUNC
-                newFUNC.append(tempFUNC)
-    if (lethality == "viable"):
-        for line in FUNC:
-            tempFUNC = []
-            if gene in line and line not in geneSeen:
-                geneSeen.append(line)
-                line = line.replace('\n','')
-                tempFUNC.append(str(line) + "\t0")
-
-                print tempFUNC
-                newFUNC.append(tempFUNC)
-
-        print "Something"
-        print tempFUNC
-#FUNCoutputfile.write("\n".join(newFUNC))
-
-
-for element in newFUNC:
-    #FUNCoutputfile.writelines(str(element)+"\n")
-    FUNCoutputfile.write(" ".join(element) + "\n")
+# newFUNC = []
+#
+# geneSeen = []
+# for line in open('./Single_Lethality_Genes.txt', mode='r'):
+#     line = line.rstrip()
+#     split_line = line.split(",")
+#     gene = split_line[0]
+#     lethality = split_line[1]
+#     if (lethality == "lethal"):
+#         for line in FUNC:
+#             tempFUNC = []
+#             if gene in line and line not in geneSeen:
+#                 geneSeen.append(line)
+#                 line = line.strip()
+#                 tempFUNC.append(str(line) + "\t1")
+#                 print tempFUNC
+#                 newFUNC.append(tempFUNC)
+#     if (lethality == "viable"):
+#         for line in FUNC:
+#             tempFUNC = []
+#             if gene in line and line not in geneSeen:
+#                 geneSeen.append(line)
+#                 line = line.replace('\n','')
+#                 tempFUNC.append(str(line) + "\t0")
+#
+#                 print tempFUNC
+#                 newFUNC.append(tempFUNC)
+#
+#         print "Something"
+#         print tempFUNC
+# # #FUNCoutputfile.write("\n".join(newFUNC))
+#
+#
+# for element in newFUNC:
+#     #FUNCoutputfile.writelines(str(element)+"\n")
+#     FUNCoutputfile.write(" ".join(element) + "\n")
 
 ###############################################################
 

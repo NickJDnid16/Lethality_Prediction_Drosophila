@@ -159,11 +159,11 @@ for line in data:
                                 Up.extend(gr.incidents(node))
                                 l = l + 1
 
-                           if l == 1000000:
+                                if l == 1000000:
                                     Up = Duplicates(Up)
                                     # print("Parents Added")
                             except (KeyError, ValueError):
-                            print("Error")
+                                print("Error")
 
                                 # print("Node Size")
                                 # print(len(Nodes))
