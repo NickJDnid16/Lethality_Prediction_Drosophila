@@ -47,7 +47,7 @@ for line in open('./Single_Lethality_Genes.txt', mode='r'):
     gene = split_line[0]
     lethality = split_line[1]
     #print "Lethality is " + lethality
-    if "inviable" in lethality:
+    if "lethal" in lethality:
         for line in FUNC:
             tempFUNC = []
             if gene in line and line not in geneSeen:
@@ -81,8 +81,8 @@ for element in newFUNC:
 
 inputfile = open('./Gene&GO_F.txt', mode='rb')
 outputfile = open('./Gene&GO_F_With_Lethality.txt', mode='wb')
-LethalOutput = open('./Lethal_Fisht.txt', mode='w')
-Viable_LethalOutput= open('./Lethal&Viable_Fish.txt', mode='w')
+LethalOutput = open('./Lethal_Fly.txt', mode='w')
+Viable_LethalOutput= open('./Lethal&Viable_Fly.txt', mode='w')
 inputfile = csv.reader(inputfile, delimiter=',')
 
 previous = None
