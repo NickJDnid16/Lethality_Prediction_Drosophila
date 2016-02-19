@@ -48,7 +48,7 @@ def parseTagValue(term):
   
   
   
-oboFile = open('./New_GO.obo','r')
+oboFile = open('./GO.obo','r')
 
 #declare a blank dictionary
 #keys are the goids

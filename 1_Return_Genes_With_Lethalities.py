@@ -13,8 +13,13 @@ outputfile = open('./Allele&Lethality_Rows.txt', mode='wb')
 
 
 for line in inputfile:
+<<<<<<< HEAD
     if "FB" in line:
         PhenLines.append(line)
+=======
+    if "lethal" in line or "viable" in line:
+        outputfile.write(line)
+>>>>>>> origin/master
 
 inputfile.close()
 
@@ -141,8 +146,14 @@ outputfile.close()
 
 
 
+<<<<<<< HEAD
 outputfile = open('./Single_Lethality_Genes.txt', mode='wb')
 inputfile = open('./Genes_With_All_Lethality.txt', mode='rb')
+=======
+outputfile = open('./Single_Lethality_Genes.txt', mode='w')
+inputfile = open('./Genes_With_All_Lethality.txt', mode='r')
+essOutputfile = open('./Lethal_Fly.txt', mode='w')
+>>>>>>> origin/master
 
 for line in inputfile:
     v = "viable" in line
@@ -163,13 +174,17 @@ for line in inputfile:
             bit = bits[0]+",lethal\n"
             print (bit)
             outputfile.write(bit)
+<<<<<<< HEAD
         if ((not l) and (not v) and (not o)):
+=======
+            essOutputfile.write(bits[0] + "\n")
+        if ((not l) and (not v)):
+>>>>>>> origin/master
             print("Not Viable OR Lethal")
 
 outputfile.close()
 
 
 ############################################################################################
-
 
 

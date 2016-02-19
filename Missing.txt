@@ -1,6 +1,0 @@
-Tempy Missing['Unable To Add Missing Value', 'GO0008262', 'Unable To Add Missing Value', 'Unable To Add Missing Value', 'GO0034273', 'Unable To Add Missing Value']
-['Unable To Add Missing Value', 'GO0008262', 'Unable To Add Missing Value', 'Unable To Add Missing Value', 'GO0034273', 'Unable To Add Missing Value']
-['Unable To Add Missing Value', 'GO0008262', 'Unable To Add Missing Value', 'Unable To Add Missing Value', 'GO0034273', 'Unable To Add Missing Value']
-['Unable To Add Missing Value', 'GO0008262', 'Unable To Add Missing Value', 'Unable To Add Missing Value', 'GO0034273', 'Unable To Add Missing Value']
-['Unable To Add Missing Value', 'GO0008262', 'Unable To Add Missing Value', 'Unable To Add Missing Value', 'GO0034273', 'Unable To Add Missing Value']
-['Unable To Add Missing Value', 'GO0008262', 'Unable To Add Missing Value', 'Unable To Add Missing Value', 'GO0034273', 'Unable To Add Missing Value']

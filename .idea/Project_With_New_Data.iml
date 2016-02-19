@@ -5,6 +5,8 @@
     <orderEntry type="jdk" jdkName="Python 2.7.10 (C:\Python27\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Lethality_Prediction" />
+    <orderEntry type="module" module-name="Lethality_Prediction_Yeast" />
+    <orderEntry type="module" module-name="Lethality_Prediction_Worm" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
