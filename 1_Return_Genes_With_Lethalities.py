@@ -127,15 +127,10 @@ for line in inputfile:
     split_string = line.split(",")
     genome = split_string [0]
     lethalNotation = split_string [1]
-    l = "lethal" in line
-    v = "viable" in line
-    if not (l or v):
-        lethalNotation = "other"
     data [genome] = data.get(genome,"")+lethalNotation.rstrip('\r\n')+","
 
 
 for x in data:
-        #print (x+","+data[x]+"\n")
     outputfile.write(x+","+data[x]+"\n")
 
 outputfile.close()
@@ -165,16 +160,16 @@ for line in inputfile:
     else:
         line = line.rstrip()
         bits = line.split(',')
-        if(v or o and not l):
+        if(v) or (o) and not (l):
             bit = bits[0]+",viable\n"
             print (bit)
             outputfile.write(bit)
-        elif(l and o):
+        elif(l) and (o):
             bit = bits[0]+",lethal\n"
             print (bit)
             outputfile.write(bit)
             essOutputfile.write(bits[0] + "\n")
-        elif(l and not v):
+        elif(l) and not (v):
             bit = bits[0]+",lethal\n"
             print (bit)
             outputfile.write(bit)

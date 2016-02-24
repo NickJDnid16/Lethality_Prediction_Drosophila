@@ -49,7 +49,7 @@ for line in open('./Single_Lethality_Genes.txt', mode='rb'):
     gene = split_line[0]
     lethality = split_line[1]
     #print "Lethality is " + lethality
-    if "lethal" in lethality:
+    if (lethality == "lethal"):
         for line in FUNC:
             tempFUNC = []
             if gene in line and line not in geneSeen:
@@ -58,7 +58,7 @@ for line in open('./Single_Lethality_Genes.txt', mode='rb'):
                 tempFUNC.append(str(line) + "\t1")
                 #print tempFUNC
                 newFUNC.append(tempFUNC)
-    if "viable" in lethality:
+    if (lethality == "viable"):
         for line in FUNC:
             tempFUNC = []
             if gene in line and line not in geneSeen:
