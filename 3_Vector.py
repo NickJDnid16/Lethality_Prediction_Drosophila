@@ -107,15 +107,14 @@ def Duplicates(Up):
 
 
 debug = 0
-# outputfile = open('/home/mint/git/prediction-of-Lethality-in-Fly-Mutants-using-Machine-Learning/Workspace/Lethality Extraction/Vector.txt')
+
 data = open('./Gene&GO_F_With_Lethality.txt', mode="rb")
-# data = open('./Gene&GO_F_No_ISS.txt')#NO ISS
-# data = open('./Gene&GO_F_No_IMP.txt')#NO IMP
+
 
 outputfile = open('./BinVec.txt', mode='wb')
 OutMissing = open('./Missing.txt', mode='wb')
 OutParents = open('./Parents.txt', mode='wb')
-Genes = open('./Genes.txt', mode='w')
+Genes = open('./Genes.txt', mode='wb')
 for line in data:
     debug = debug + 1
     csv = line.split(",")

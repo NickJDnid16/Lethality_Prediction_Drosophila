@@ -10,7 +10,8 @@ GOoutputfile = open('./Gene_With_Only_GO.txt', mode='wb')
 FUNCoutputfile = open('./Gene_With_GO_FUNC .txt', mode='wb')
 Seen =[]
 FUNC = []
-geneAssociation = open('./gene_association.fb')
+
+geneAssociation = open('./gene_association.fb', mode='rb')
 
 for line in geneAssociation:
     split_string = line.split("\t")
