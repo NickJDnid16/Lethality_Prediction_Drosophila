@@ -274,7 +274,7 @@ for line in FuncMatch:
     gene = split_string[0]
 
     lethality = split_string[-1]
-    lethality = lethality.replace("\r\n","")
+    lethality = lethality.replace("\n","")
 
 
     if (lethality == "lethal"):
