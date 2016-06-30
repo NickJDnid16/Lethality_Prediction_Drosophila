@@ -160,16 +160,16 @@ for line in inputfile:
     else:
         line = line.rstrip()
         bits = line.split(',')
-        if(v) or (o) and not (l):
+        if (v or o) and not (l):
             bit = bits[0]+",viable\n"
             print (bit)
             outputfile.write(bit)
-        elif(l) and (o):
+        elif l and o:
             bit = bits[0]+",lethal\n"
             print (bit)
             outputfile.write(bit)
             essOutputfile.write(bits[0] + "\n")
-        elif(l) and not (v):
+        elif l and not v:
             bit = bits[0]+",lethal\n"
             print (bit)
             outputfile.write(bit)
