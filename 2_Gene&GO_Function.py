@@ -11,7 +11,7 @@ GOoutputfile = open('./Gene_With_Only_GO.txt', mode='wb')
 Seen =[]
 
 
-geneAssociation = open('./gene_association.fb', mode='rb')
+geneAssociation = open('./gene_association.fb_17', mode='rb')
 
 for line in geneAssociation:
     split_string = line.split("\t")

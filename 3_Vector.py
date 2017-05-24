@@ -125,7 +125,7 @@ for line in data:
     debug = debug + 1
     csv = line.split(",")
     Gene = csv[0]
-    print(csv[0])
+    #print(csv[0])
 
 
     Continue = True
@@ -183,7 +183,7 @@ for line in data:
                     print("Root")
 
     Ancestors.extend(Up)
-    print("Ancestors")
+    #print("Ancestors")
     # print(Ancestors)
     # print(vec)
     ModifiedAncestors = []
@@ -193,7 +193,7 @@ for line in data:
             ModifiedAncestors.append(node)
             NodesSeen.append(node)
 
-    print ModifiedAncestors
+    #print ModifiedAncestors
 
     del Ancestors[:]
     ModifiedAncestors.append("GO0003674")
@@ -230,7 +230,7 @@ for line in data:
     outputfile.write('\n')
     Func.append('\n')
 
-    print(Gene, BinVec)
+    #print(Gene, BinVec)
 
     for t in range(0, len(BinVec)):
         BinVec[t] = 0
@@ -252,6 +252,7 @@ for key in Missing:
 
 
 ###############################################
+newFUNC = []
 newFUNC = []
 #Test
 
@@ -277,7 +278,7 @@ for line in FuncMatch:
     gene = split_string[0]
 
     lethality = split_string[-1]
-    lethality = lethality.replace("\n","")
+    lethality = lethality.replace("\r\n","")
 
 
     if (lethality == "lethal"):

@@ -8,7 +8,7 @@ import codecs
 from itertools import repeat
 import csv
 PhenLines = []
-inputfile = open('./allele_phenotypic_data_fb_2015_04.tsv', mode='rb')
+inputfile = open('./allele_phenotypic_data_fb_2017_01.tsv', mode='rb')
 outputfile = open('./Allele&Lethality_Rows.txt', mode='wb')
 
 
