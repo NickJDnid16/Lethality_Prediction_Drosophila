@@ -108,7 +108,7 @@ def Duplicates(Up):
 
 debug = 0
 
-data = open('./Gene&GO_F_With_Lethality.txt', mode="rb")
+data = open('./Gene&GO_F_With_Lethality_Filtered.txt', mode="rb")
 
 
 outputfile = open('./BinVec.txt', mode='wb')
@@ -261,7 +261,7 @@ geneSeen = []
 #outputfile.close()
 
 tempy = open('./FUNCGenes.txt', mode='wb')
-FuncMatch = open('./Gene&GO_F_With_Lethality.txt', mode='rb')
+FuncMatch = open('./Gene&GO_F_With_Lethality_Filtered.txt', mode='rb')
 FUNCoutputfile = open('./Gene_With_GO_FUNC.txt', mode='wb')
 
 tempySeen = []

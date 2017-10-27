@@ -22,7 +22,7 @@ for BinLine in codecs.open('./BinVec.txt',encoding='utf-8', mode='rb'):
     
     lines = lines +1
     
-    line = linecache.getline('./Gene&GO_F_With_Lethality.txt', lines)
+    line = linecache.getline('./Gene&GO_F_With_Lethality_Filtered.txt', lines)
     #line = linecache.getline('./GO_Not_L_Or_V_Fly.txt', lines)
     #line = linecache.getline('./Gene&GO_F_No_ISS.txt', lines)
     #line = linecache.getline('./Gene&GO_F_No_IMP.txt', lines)

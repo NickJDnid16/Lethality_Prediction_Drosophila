@@ -25,7 +25,7 @@ for line in geneAssociation:
             Seen.append(genome)
             GOoutputfile.write(genome + "\n")
 
-for line in open('./Single_Lethality_Genes.txt', mode='rb'):
+for line in open('./Single_Melanogaster_Genes.txt', mode='rb'):
     line = line.rstrip()
     split_line = line.split(",")
     gene = split_line[0]
@@ -45,7 +45,7 @@ outputfile.close()
 
 
 inputfile = open('./Gene&GO_F.txt', mode='rb')
-outputfile = open('./Gene&GO_F_With_Lethality.txt', mode='wb')
+outputfile = open('./Gene&GO_F_With_Lethality_Filtered.txt', mode='wb')
 LethalOutput = open('./Lethal_Fly.txt', mode='wb')
 Viable_LethalOutput= open('./Lethal&Viable_Fly.txt', mode='wb')
 inputfile = csv.reader(inputfile, delimiter=',')
